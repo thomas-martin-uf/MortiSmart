@@ -69,7 +69,7 @@ table{
 }
 
 label, input {
-    width:200px;
+    width:120px;
 }
 
 .content-header{
@@ -103,8 +103,15 @@ label, input {
 
 .results{
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 1rem;
+}
+
+.results-item{
+    display:flex;
+    width: 50%;
+    align-items: center;
 }
 
 .top-bar h1{
@@ -115,4 +122,16 @@ label, input {
     text-align: center;
     color: #c4f3c4;
     
+}
+
+.result-span{
+    display: flex;
+}
+
+.left{
+    margin-right: auto;
+}
+
+.right{
+    margin-left:auto;
 }

@@ -8,7 +8,11 @@ export const Results = {
         div.classList.add("results");
         for (const [key, val] of Object.entries(dataObj)) {
             const innerDiv = document.createElement("div");
-            innerDiv.innerHTML = `${key}: <b>${USDollar.format(val)}</b>`;
+            innerDiv.classList.add("results-item");
+            innerDiv.innerHTML = `<span class="result-span left">${key}:</span> 
+                <span class="result-span right"><b>${USDollar.format(
+                    val
+                )}</b></span>`;
             div.appendChild(innerDiv);
         }
 

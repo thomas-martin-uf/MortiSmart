@@ -19,8 +19,6 @@ export const MainContent = {
         if (parent) {
             parent.append(ContentHeader.getElement("Loan Terms"));
             parent.appendChild(InputForm.getElement(parent));
-
-            //parent.appendChild(OutputTable.getElement());
         }
     },
 };

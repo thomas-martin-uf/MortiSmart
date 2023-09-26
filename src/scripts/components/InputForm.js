@@ -20,7 +20,7 @@ export const InputForm = {
 
         const label = document.createElement("label");
         label.textContent = labelText;
-        label.style.width = "150px"; // Adjust the width as needed for your design
+        label.style.width = "120px"; // Adjust the width as needed for your design
         label.style.marginRight = "10px";
         label.style.textAlign = "right";
 
