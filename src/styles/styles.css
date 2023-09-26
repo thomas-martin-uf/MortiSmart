@@ -26,7 +26,7 @@ p {
 .top-bar{
     position: fixed;
     background: rgb(56, 95, 56);
-    height: 40px;
+    height: 50px;
     width: 100%;
     top:0;
     z-index:999;
@@ -35,7 +35,7 @@ p {
 .footer{
     position: fixed;
     background: rgb(156, 156, 156);
-    height: 40px;
+    height: 50px;
     width: 100%;
     bottom:0;
     z-index:999;
@@ -105,4 +105,14 @@ label, input {
     display: flex;
     align-items: center;
     padding: 1rem;
+}
+
+.top-bar h1{
+    margin: 0;
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+    height: 50px;
+    text-align: center;
+    color: #c4f3c4;
+    
 }
