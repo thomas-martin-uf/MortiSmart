@@ -1,0 +1,8 @@
+export const constants = {
+    DEFAULT_LOADING_STATE: false,
+    DEFAULT_COMING_SOON: false,
+    DEFAULT_CURRENT_SELECTION: 0,
+    DEFAULT_RENDER_CONTAINER_ID: "main-container",
+    DEFAULT_TOP_BAR_RENDER_CONTAINER_ID: "top-bar",
+    DEFAULT_FOOTER_RENDER_CONTAINER_ID: "footer",
+};
