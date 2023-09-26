@@ -69,9 +69,12 @@ table{
 }
 
 label, input {
-    width:120px;
+    width:150px;
 }
-
+label{
+    margin-right: 10px;
+    text-align: right;
+}
 .content-header{
     font-size: 1.2rem;
     padding: 1rem;
@@ -150,6 +153,10 @@ label, input {
         display:flex;
         width: 100%;
         align-items: center;
+    }
+
+    label, input {
+        width:120px;
     }
     
     
