@@ -135,3 +135,22 @@ label, input {
 .right{
     margin-left:auto;
 }
+
+
+@media only screen and (max-width: 650px) {
+    .container {
+        max-width: 300px;
+        margin: 60px auto;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .results-item{
+        display:flex;
+        width: 100%;
+        align-items: center;
+    }
+    
+    
+  }
