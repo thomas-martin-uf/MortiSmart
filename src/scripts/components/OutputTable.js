@@ -21,11 +21,11 @@ export const OutputTable = {
             const balance = document.createElement("th");
 
             // update the text of the headers
-            year.textContent = "year";
-            month.textContent = "month";
-            interest.textContent = "interest";
-            principal.textContent = "principal";
-            balance.textContent = "balance";
+            year.textContent = "Year";
+            month.textContent = "Month";
+            interest.textContent = "Interest";
+            principal.textContent = "Principal";
+            balance.textContent = "Balance";
 
             // add headers to the header row and then the header tow to the table
             headerRow.append(year, month, interest, principal, balance);
