@@ -9,7 +9,7 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 60px auto;
+    margin: 80px auto;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,7 @@ p {
 
 .top-bar{
     position: fixed;
-    background: rgb(56, 95, 56);
+    background: #c4f3dc;
     height: 50px;
     width: 100%;
     top:0;
@@ -34,7 +34,7 @@ p {
 
 .footer{
     position: fixed;
-    background: rgb(156, 156, 156);
+    background: #e5e5e5;
     height: 50px;
     width: 100%;
     bottom:0;
@@ -78,10 +78,11 @@ label{
 .content-header{
     font-size: 1.2rem;
     padding: 1rem;
-    background: #c4f3c4;
+    background: #c4f3dc;
     border-bottom: 1px solid rgb(232, 232, 232);
+    
     color: #21511e;
-    border-top: 1px solid #fff;
+  /*   border-top: 1px solid #fff; */
 }
 
 .loan-form{
@@ -95,7 +96,7 @@ label{
     height: 35px;
     width: 90%;
     border: 1px solid rgb(232, 232, 232);
-    background-color: #c4f3c4;
+    background-color: #c4f3dc;
     color: #21511e;
     font-size: 0.9rem;
 }
@@ -124,7 +125,7 @@ label{
     margin-top: 0.25rem;
     height: 50px;
     text-align: center;
-    color: #c4f3c4;
+    color: #21511e;
     
 }
 
@@ -156,7 +157,7 @@ label{
 .tab-container{
     display: flex;
     justify-content: space-evenly;
-    background-color: #c4f3c4;
+    background-color: #c4f3dc /* c4f3c4 */;
 }
 
 .border-none{
@@ -194,7 +195,7 @@ th {
    
     /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #c4f3c4; 
+    background: #c4f3dc; 
     height: 2rem;
     border-radius: 6px;
   }
