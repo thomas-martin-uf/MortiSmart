@@ -72,6 +72,7 @@ table {
 label,
 input {
     width: 150px;
+    font-size: 1rem;
 }
 label {
     margin-right: 10px;
@@ -100,7 +101,7 @@ label {
     border: 1px solid rgb(232, 232, 232);
     background-color: #c4f3dc;
     color: #21511e;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .btn:hover {
@@ -182,11 +183,39 @@ th {
     padding: 0.75rem;
     color: #21511e;
 }
+
 tr {
     height: 3rem;
 }
+
 tr:hover {
     background-color: #f6f6f6;
+}
+
+.mt-none {
+    margin-top: 0 !important;
+}
+.mt-1 {
+    margin-top: 1rem !important;
+}
+.mt-2 {
+    margin-top: 2rem !important;
+}
+.mt-3 {
+    margin-top: 3rem !important;
+}
+
+.mb-none {
+    margin-bottom: 0 !important;
+}
+.mb-1 {
+    margin-bottom: 1rem !important;
+}
+.mb-2 {
+    margin-bottom: 2rem !important;
+}
+.mb-3 {
+    margin-bottom: 3rem !important;
 }
 
 /* width */
