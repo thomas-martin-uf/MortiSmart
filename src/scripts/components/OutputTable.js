@@ -4,7 +4,10 @@ const { USDollar } = utils;
 export const OutputTable = {
     // creates and returns dom element
     getElement: (data = [1, 2, 3]) => {
-        // create table element
+        // create table element container and table
+        const overflowWrapper = document.createElement("div");
+        overflowWrapper.classList.add("overflow-table");
+
         const table = document.createElement("table");
 
         // make sure we have an array and that it has some items
@@ -35,26 +38,27 @@ export const OutputTable = {
 
                 // create columns
                 const year = document.createElement("td");
-                year.textContent = item;
+                year.textContent = item.year;
 
                 const month = document.createElement("td");
-                month.textContent = item;
+                month.textContent = item.month;
 
                 const interest = document.createElement("td");
-                interest.textContent = USDollar.format(500);
+                interest.textContent = USDollar.format(item.interest);
 
                 const principal = document.createElement("td");
-                principal.textContent = USDollar.format(610);
+                principal.textContent = USDollar.format(item.principal);
 
                 const balance = document.createElement("td");
-                balance.textContent = USDollar.format(149390);
+                balance.textContent = USDollar.format(item.balance);
 
                 // add colmns to row and row to table
                 tr.append(year, month, interest, principal, balance);
                 table.appendChild(tr);
+                overflowWrapper.appendChild(table);
             });
         }
-        return table;
+        return overflowWrapper;
     },
 
     // renders element to given parent element

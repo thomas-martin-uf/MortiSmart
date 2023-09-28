@@ -3,6 +3,7 @@ import { constants } from "../constants.js";
 import { calculations } from "../calculations.js";
 import { Results } from "./Results.js";
 import { ContentHeader } from "./ContentHeader.js";
+import { OutputTable } from "./OutputTable.js";
 // destructure
 const { DEFAULT_RENDER_CONTAINER_ID } = constants;
 const { USDollar } = utils;
@@ -98,6 +99,15 @@ export const InputForm = {
                 }
                 parent.append(ContentHeader.getElement("Results"));
                 parent.appendChild(Results.getElement(resObj));
+                parent.append(ContentHeader.getElement("Schedule"));
+                parent.appendChild(
+                    OutputTable.getElement(
+                        calculations.amortizedSchedule(loan, interest, term)
+                    )
+                );
+                console.log(
+                    calculations.amortizedSchedule(loan, interest, term)
+                );
             }
         };
         form.appendChild(submitButton);

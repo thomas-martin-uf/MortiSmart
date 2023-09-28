@@ -1,7 +1,6 @@
 import { ComingSoon } from "./ComingSoon.js";
 import { MainContent } from "./MainContent.js";
 import { constants } from "../constants.js";
-import { InputForm } from "./InputForm.js";
 
 const { DEFAULT_RENDER_CONTAINER_ID, DEFAULT_COMING_SOON } = constants;
 
@@ -14,6 +13,7 @@ export const UI = {
                 return ComingSoon.render();
             } else {
                 MainContent.render();
+                //parent.append(OutputTable.getElement());
             }
         }
     },

@@ -23,4 +23,36 @@ export const calculations = {
     totalAmountPaid: (loan, totalInterest) => {
         return Number(loan) + Number(totalInterest);
     },
+    amortizedSchedule: (loan, interest, term) => {
+        const fixedMonthly = calculations.monthlyPayments(loan, interest, term);
+        let interest_rate = 0.0;
+        let paymentTowards = 0.0;
+        let totalInterest = 0.0;
+        let totalPaymentTowardLoan = 0.0;
+
+        const mRate = interest / (12 * 100);
+        const results = [];
+
+        for (let year = 1; year <= term; year++) {
+            for (let month = 1; month <= 12; month++) {
+                interest_rate = loan * mRate;
+                totalInterest += interest_rate;
+                paymentTowards = fixedMonthly - interest_rate;
+                totalPaymentTowardLoan += paymentTowards;
+                loan -= paymentTowards;
+
+                // add result to array of results so we can print the later
+                results.push({
+                    year: year,
+                    month: month,
+                    interest: interest_rate,
+                    principal: paymentTowards,
+                    balance: loan,
+                    totalInterest: totalInterest,
+                    totalPrincipal: totalPaymentTowardLoan,
+                });
+            }
+        }
+        return results;
+    },
 };

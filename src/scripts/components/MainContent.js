@@ -2,7 +2,6 @@
 import { constants } from "../constants.js";
 import { utils } from "../utils.js";
 import { InputForm } from "./InputForm.js";
-import { OutputTable } from "./OutputTable.js";
 import { ContentHeader } from "./ContentHeader.js";
 
 // destructure
@@ -17,6 +16,10 @@ export const MainContent = {
         const { currentPage, totalPages } = MainContent;
         const parent = document.getElementById(parent_id);
         if (parent) {
+            /*   parent.innerHTML = `<div class='tab-container flex'>
+                <span class='tab-option border-none'>Option 1</span>
+                <span class='tab-option'>Option 2</span>
+                <span class='tab-option border-none'>Option 3</span></div>`; */
             parent.append(ContentHeader.getElement("Loan Terms"));
             parent.appendChild(InputForm.getElement(parent));
         }
