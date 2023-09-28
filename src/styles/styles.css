@@ -81,8 +81,8 @@ label {
     font-size: 1.2rem;
     padding: 1rem;
     background: #c4f3dc;
-    border-bottom: 1px solid rgb(232, 232, 232);
-
+    /*   border-bottom: 1px solid rgb(232, 232, 232);
+ */
     color: #21511e;
     /*   border-top: 1px solid #fff; */
 }
@@ -105,7 +105,7 @@ label {
 
 .btn:hover {
     cursor: pointer;
-    background-color: #e3fde1;
+    background-color: #9aeac3;
 }
 
 .results {
@@ -178,11 +178,12 @@ label {
 th {
     top: 0;
     position: sticky;
-    background-color: white;
+    background-color: #c4f3dc;
     padding: 0.75rem;
+    color: #21511e;
 }
 tr {
-    height: 30px;
+    height: 3rem;
 }
 tr:hover {
     background-color: #f6f6f6;
@@ -203,13 +204,13 @@ tr:hover {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #c4f3dc;
-    height: 2rem;
-    border-radius: 6px;
+    height: 3rem;
+    border-radius: 0px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #21511e;
+    background: #9aeac3;
 }
 
 /* screens smaller than 650px wid */

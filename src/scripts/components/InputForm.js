@@ -97,9 +97,11 @@ export const InputForm = {
                     //if (parent.lastElementChild.classList.contains("results"))
                     parent.removeChild(parent.lastChild);
                 }
-                parent.append(ContentHeader.getElement("Results"));
+                parent.append(ContentHeader.getElement("Payment Results"));
                 parent.appendChild(Results.getElement(resObj));
-                parent.append(ContentHeader.getElement("Schedule"));
+                parent.append(
+                    ContentHeader.getElement("Amortization Schedule")
+                );
                 parent.appendChild(
                     OutputTable.getElement(
                         calculations.amortizedSchedule(loan, interest, term)
